@@ -1,6 +1,18 @@
 // ==========================================================
 // STATE & UTILITIES — Modern UI (Option 2 + C + F)
 // ==========================================================
+const express  = require('express')
+const sqlite3  = require('sqlite3').verbose()
+const csv      = require('csv-parser')
+const chokidar = require('chokidar')
+const fs       = require('fs')
+const path     = require('path')
+
+const app = express()   // ← THIS LINE IS MISSING IN YOUR FILE
+const PORT = 3000
+
+app.use(express.static('public'))
+
 
 let allSalesData   = []
 let allPLData      = []
