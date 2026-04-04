@@ -755,3 +755,4 @@ function renderPLComparison() {
 // START APP
 // ==========================================================
 document.addEventListener('DOMContentLoaded', init)
+module.exports = app;
