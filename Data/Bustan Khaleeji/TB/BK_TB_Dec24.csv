@@ -1,0 +1,275 @@
+﻿SORT,ACCOUNT NO,ACCOUNT NAME, OPENING BALANCE , DEBIT AMOUNT , CREDIT AMOUNT , BALANCE 
+ Sales of Goods ,44110100,Cash  Sales,-42009.281,0,3428.617,-45437.898
+ Sales of Goods ,44110101,Credit Sales,-8167427.95,26809.807,696720.923,-8837339.066
+ Sales of Goods ,44110200,Discount On Cash Sales,10479.847,184.793,0,10664.64
+ Sales of Goods ,44110201,Discount On Credit Sales,627664.246,56375.268,0.091,684039.423
+ Cost of Sales ,44120100,Cost Of Cash Sales,24033.275,1907.166,0,25940.441
+ Cost of Sales ,44120101,Cost Of Credit Sales,5237693.233,446839.675,15489.248,5669043.66
+ Cost of Sales ,44120500,FOC Transfer -A Rechargeable,-55389.81,1090,4137,-58436.81
+ Gain on foreign exchange ,44220301,Exchange Rate,-6823.957,140.815,15172.642,-21855.784
+ Other Income ,44220302,Others,-5207.249,0,712.544,-5919.793
+ Other Income ,44220334,Other Income - Ferrero Merchandiser,-248369,0,22579,-270948
+ Other Income ,44220335,Other Income - Ferrero 3PL,-663063.204,5407.4,72431.835,-730087.639
+ Other Income ,44220337,Other Income - Commission Income From Fergulf,-232222.221,0,21111.111,-253333.332
+ Other Income ,44220339,Other Income -  Goodlife,-77000,0,7000,-84000
+ Other Income ,44220340,Other Income -  Bateel 3PL,-22220,0,2020,-24240
+ Other Income ,44220341,Other Income -  Al Thiqa 3PL,-79750,0,19846.255,-99596.255
+ Finance Cost ,44220345,Interest Income - Fixed Deposit,-52572,0,5312,-57884
+ Distribution Costs ,55110101,Staff Cost - Sales Commission,107847.367,10236.91,0,118084.277
+ Distribution Costs ,55110102,Damage,88357.985,20649.507,11421.968,97585.524
+ Distribution Costs ,55110103,Advertising & Promotion,148094.46,4002.8,0,152097.26
+ Distribution Costs ,55110104,Cars Expenses,5207.459,329.364,0,5536.823
+ Distribution Costs ,55110107,GIFT & SAMPLE,2.665,7.48,0,10.145
+ Finance Cost ,55110109,Refinancing Interest - KFH / KIB,62583.444,5493.329,0,68076.773
+ Distribution Costs ,55110112,Extra Discount To Customer,441.44,0,0,441.44
+ Distribution Costs ,55110113,Stock Take Varaince,307.905,3012.822,0,3320.727
+ Distribution Costs ,55110119,Damages - HHT,10129.383,4007.513,0,14136.896
+ Distribution Costs ,55110123,Muncipality Samples,3251.47,146.77,0,3398.24
+ Distribution Costs ,55110124,A&P - Rebates,205640.255,30531.91,0,236172.165
+ Distribution Costs ,55110125,A&P - Rentals - Contractual,130704.311,30398.208,0,161102.519
+ Distribution Costs ,55110126,A&P - Rentals - Non Contractual,75988.502,0,0,75988.502
+ Distribution Costs ,55110127,A&P - Listing Fees,29724.038,13199.941,0,42923.979
+ Distribution Costs ,55110128,A&P - Off Shelf Display (Osd),226495.042,8981.8,0,235476.842
+ Distribution Costs ,55110129,A&P - Promotion Spends,2212.768,2565.963,0,4778.731
+ Distribution Costs ,55110130,A&P - Other Market Spends,56251.652,6076.687,0,62328.339
+ Distribution Costs ,55110131,A&P - In-Market Liquidation,49168.369,13061.406,0,62229.775
+ Distribution Costs ,55110132,A&P - Contract &  Inventory Support,97111.661,3030.175,0,100141.836
+ Distribution Costs ,55110133,A&P - Price Diff  Price Increase Fees,14297.15,255.229,0,14552.379
+ Distribution Costs ,55110134,A&P - Foc Goods Income,-15975.883,0,11.704,-15987.587
+ Distribution Costs ,55110135,A&P - Support From BP (Non GP),-227404,0,28608,-256012
+ Distribution Costs ,55120101,Staff Cost - Salaries,996308.348,96862.954,6787,1086384.302
+ Distribution Costs ,55120102,Staff Cost - Leave,91401.76,9302.836,1226,99478.596
+ Distribution Costs ,55120103,Staff Cost - Indemnity,122798.013,9766.852,0,132564.865
+ Administrative expenses ,55120104,MANAGER BOUNS,0,43000,0,43000
+ Distribution Costs ,55120105,Staff Cost - Insurance,47810.322,3340,0,51150.322
+ Administrative expenses ,55120107,Staff Cost - Temporary Labour,39192.834,3955.577,0,43148.411
+ Distribution Costs ,55120108,Staff cost - Training,1664.927,151.357,0,1816.284
+ Administrative expenses ,55120109,Staff Cost - Overtime,59487.589,8532.717,0,68020.306
+ Distribution Costs ,55120110,Staff Cost - Air Ticket,51305.033,4618.503,0,55923.536
+ Distribution Costs ,55120111,Staff Cost - School Fees,26493.652,2483.333,0,28976.985
+ Distribution Costs ,55120112,Staff Cost - Staff Welfare,2353.34,0,0,2353.34
+ Distribution Costs ,55120114,Staff Cost - Health Card,1709,173,0,1882
+ Distribution Costs ,55120119,Staff Cost - Civil Id Fees,1130,95,0,1225
+ Distribution Costs ,55120121,Staff Cost - Group Life Insurance,7893.993,696.221,7.291,8582.923
+ Administrative expenses ,55120124,Staff Cost - Security Guard-Outsourced,17550,2430,1080,18900
+ Distribution Costs ,55120125,Staff Cost - Salary Recharge,-94759.401,0,8473.13,-103232.531
+ Distribution Costs ,55130101,Veh R&M - Mitsubish  #19/6744 - Log-V09,1881.95,3.5,0,1885.45
+ Distribution Costs ,55130113,Veh R&M - Veh R&M - Nissan#2/22404 - Log-V04,818.583,257.25,0,1075.833
+ Distribution Costs ,55130136,Veh R&M - Mitsubishi 16/6825 -  Log-V12,1681.166,80.5,0,1761.666
+ Distribution Costs ,55130154,Veh R&M - Mitsubishi- 5/85020 -  Log-V15,1612.783,46,0,1658.783
+ Distribution Costs ,55130155,Veh R&M - Mitsubishi-9/30258 -  Log-V16,2044.2,136,0,2180.2
+ Distribution Costs ,55130156,Veh R&M - Isuzu 19/17885 -  Log-V17,1985.184,178.75,0,2163.934
+ Distribution Costs ,55130157,Veh R&M - Mitsubishi-  5/84205 -  Log-V18,2147.134,88.75,20,2215.884
+ Distribution Costs ,55130158,Veh R&M - Mitsubishi   5/80820 -  Log-V19,1687.632,207,0,1894.632
+ Distribution Costs ,55130159,Veh R&M - Mitsubishi   6/90521 -  Log-V20,2615.438,584.5,0,3199.938
+ Distribution Costs ,55130160,Veh R&M - Isuzu 4/87409 - Cpd(Brn)-V21,2028.783,634,0,2662.783
+ Distribution Costs ,55130161,Veh R&M - Isuzu 4/87196 - Cpd(Brn)-V22,1535.634,158.75,0,1694.384
+ Distribution Costs ,55130162,Veh R&M - Isuzu 5/91368 - Cpd(Brn)-V23,1428.7,68.25,0,1496.95
+ Distribution Costs ,55130163,Veh R&M - Isuzu 4/87110 - Cpd(Brn)-V24,1073.282,141.75,0,1215.032
+ Distribution Costs ,55130166,Veh R&M - Isuzu 7/27250 - Cpd(Brn)-V26,1575.5,199.45,0,1774.95
+ Distribution Costs ,55130167,Veh R&M - Isuzu 3/77831 - Log,2117.007,162,0,2279.007
+ Distribution Costs ,55130168,Veh R&M - Isuzu 3/77637 - Cpd(Brn)-V28,1876.783,82.5,0,1959.283
+ Distribution Costs ,55130169,Veh R&M - Toyota 5/31762 - Lt-V32,1471.516,45.25,0,1516.766
+ Distribution Costs ,55130173,Veh R&M - Toyota Hiace 9/71879 - Cpd(Lt)-V38,1074.889,125.5,16,1184.389
+ Distribution Costs ,55130176,Veh R&M - Isuzu 13/11116 - Log-V30,1529.702,130.5,0,1660.202
+ Distribution Costs ,55130177,Veh R&M - Isuzu 13/11282- Log-V31,2374.133,105.5,0,2479.633
+ Distribution Costs ,55130178,Veh R&M - Isuzu 17/53442-Log-V 34,1350,101,0,1451
+ Distribution Costs ,55130179,Veh R&M - Toyota 3/11230 - Cpd(Lt)-V42,938.983,20.25,0,959.233
+ Distribution Costs ,55130180,Veh R&M - Toyota 3/14815 - Cpd(Lt)-V43,765.75,13.75,0,779.5
+ Distribution Costs ,55130182,Veh R&M - Nissan 11/58449 - Cpd-V29,470.966,60.5,0,531.466
+ Distribution Costs ,55130183,Veh R&M - Isuzu 11/78393 - Log-V39,2122.167,111,0,2233.167
+ Distribution Costs ,55130184,Veh R&M - Isuzu 11/89716 - Log-V40,2153.157,143,0,2296.157
+ Distribution Costs ,55130185,Veh R&M - Hyundai 11/74065 - Cpd-V33,178.5,0,0,178.5
+ Distribution Costs ,55130186,Veh R&M - Isuzu 12/83885 - Log-V41,1953.735,233.75,0,2187.485
+ Distribution Costs ,55130187,DENG FENG 11/58599  - BRN-V45,21,0,0,21
+ Distribution Costs ,55130189,Veh R&M - Hino 13/15597 - V47 Log,1614.25,80.25,0,1694.5
+ Distribution Costs ,55130190,Veh R&M - Van 13/53293 -V48 Cpd,1551.8,100.5,0,1652.3
+ Distribution Costs ,55130193,Veh R&M - 14/26180 - Log Bw Veh,15,0,0,15
+ Distribution Costs ,55130195,Veh R&M - 14/86107 - V52 Cpd Ethnic,2383.915,72,0,2455.915
+ Distribution Costs ,55130196,Veh R&M - 14/86011 -  V53 Cpd Ethnic,1609.484,41.25,0,1650.734
+ Distribution Costs ,55130197,Veh R&M - 14/48627 - V54 Cpd Ethnic,1583.15,193,0,1776.15
+ Administrative expenses ,55130198,Veh R&M - Fork Lift Maintenance,55,0,0,55
+ Distribution Costs ,55130199,Veh R&M - 14/62180 - V51 Log,1802.5,175.5,0,1978
+ Distribution Costs ,55130200,Veh R&M - 14/76310 - V50 Log,1963.75,119.75,0,2083.5
+ Distribution Costs ,55130202,Veh R&M - Toyota Coaster 19/64026 Transport Van,812,101,0,913
+ Distribution Costs ,55130203,Veh R&M - 22/60232 Isuzu Half Lorry 2023 Model Log,793,66,0,859
+ Distribution Costs ,55130204,Veh R&M - 22/60372 Isuzu Half Lorry 2023 Model Log,836.45,76.8,0,913.25
+ Distribution Costs ,55130205,Veh R&M - 22/60464 Isuzu Half Loory 2023 Model Log,880.25,66,0,946.25
+ Administrative expenses ,55150101,Audit Fees,3895.837,354.167,0,4250.004
+ Administrative expenses ,55150102,Legal Fees,32330.606,2994.146,0,35324.752
+ Administrative expenses ,55150103,Maintenance -Property,42610.41,9003.864,5191,46423.274
+ Administrative expenses ,55150104,Communication,9757.73,863.51,0,10621.24
+ Administrative expenses ,55150105,Stationary,15175.236,1825.131,0,17000.367
+ Administrative expenses ,55150106,Electricity & Water,26535.901,2395.563,0,28931.464
+ Administrative expenses ,55150107,Rents,288481.663,27248.333,0,315729.996
+ Administrative expenses ,55150108,Traveling Expenses,14718.503,1292.038,0,16010.541
+ Administrative expenses ,55150109,Subscription,1588.191,144.381,0,1732.572
+ Administrative expenses ,55150112,Computer Expenses,21168.185,2952.408,275,23845.593
+ Administrative expenses ,55150113,Courier & Postage,535.613,41.707,0,577.32
+ Administrative expenses ,55150114,Insurance & Others,22275,2025,0,24300
+ Administrative expenses ,55150115,Entertainments,10327.208,952.603,0,11279.811
+ Administrative expenses ,55150116,Office Expenses,20165.475,5219.172,2220,23164.647
+ Administrative expenses ,55150117,Bad & Doubtful Debts,4000,0,0,4000
+ Provision on obsolete inventories ,55150124,Obsolete Stock,-9000,0,0,-9000
+ Administrative expenses ,55150334,Social Security,12101.087,1080.486,0,13181.573
+ Administrative expenses ,55150336,Additional WHS,27473.378,5779.873,0,33253.251
+ Administrative expenses ,55150338,PENALTY & FINES,25,0,0,25
+ Distribution Costs ,55150339,Additional Trucks,1185,0,0,1185
+ Administrative expenses ,55150340,Mirna Expense,1100,100,0,1200
+ Administrative expenses ,55150341,Online Server,1300,100,0,1400
+ Administrative expenses ,55150344,Pantry Expenses,4537.058,758.208,0,5295.266
+ Administrative expenses ,55150345,Business Lunch,5631.408,571.153,0,6202.561
+ Administrative expenses ,55150348,Sabhan Warehouse Rent,220000,20000,0,240000
+ Management fees ,55150349,Management Fees - TIH,35212.837,3201.167,0,38414.004
+ Administrative expenses ,55150351,License,333,0,0,333
+ Administrative expenses ,55150352,AMC - Annual Maintenance Contract,22249.996,2838.333,0,25088.329
+ Administrative expenses ,55150353,ISO 9001:2015  22000:2018,3187.665,613.333,0,3800.998
+ Depreciation & amortization ,55160102,Depreciation - Cars,8116.772,1249,0,9365.772
+ Depreciation & amortization ,55160103,Depreciation -  Equipment,75911.63,8161,0,84072.63
+ Depreciation & amortization ,55160104,Depreciation - Computers,4876.329,563,0,5439.329
+ Finance Cost ,55170101,Bank Interest,3.25,0,0,3.25
+ Finance Cost ,55170102,Bank Charges,5298.048,438.09,0,5736.138
+ Finance Cost ,55170108,Interest Income - Goodlife,-11879,0,1237,-13116
+ Cash & Chq in Hand ,11110101,Cash on Hand,0.5,35515.705,35515.505,0.7
+ Cash & Chq in Hand ,11110102,Petty Cash - Head Office,1757.525,8164,9721.525,200
+ Cash & Chq in Hand ,11110120,Cash on Hand - HHT,-0.001,7616.677,6691.725,924.951
+ Cash & Chq in Hand ,11110122,Petty Cash - Imprest - Logistics,500,500,1000,0
+ Cash & Chq in Hand ,11110123,Petty Cash - Imprest - HR,500,0,0,500
+ Cash & Chq in Hand ,11110125,Petty Cash - Imprest - Office Admin,200,0,200,0
+ Bank Balance and cash ,11110201,Bank - Gulf Bank - 09633119 - KWD,121.856,11810.057,3601,8330.913
+ Bank Balance and cash ,11110202,Bank - Kuwait Finance House K.F.H - KWD,111079.164,127390.973,111005,127465.137
+ Bank Balance and cash ,11110203,Bank - Al Ahli Bank  ABK - KWD,72973.526,0,0,72973.526
+ Bank Balance and cash ,11110205,Bank - Burgan Bank - BGB - KWD,3925.61,0,0,3925.61
+ Bank Balance and cash ,11110206,Bank - National Bank - 0003868710101 - KWD,69479.968,117391.09,143352.442,43518.616
+ Bank Balance and cash ,11110207,Bank - Gulf Bank 06219808 - KWD,180127.65,241116.976,185079.029,236165.597
+ Bank Balance and cash ,11110210,Bank - Gulf Bank 04803038 - USD,4489.18,0,0,4489.18
+ Bank Balance and cash ,11110218,Bank - Bank of Bahrain Kuwait - BBK,245201.781,544872.486,732614.679,57459.588
+ Bank Balance and cash ,11110219,Bank - Fixed Deposit - 1,750000,0,0,750000
+ Bank Balance and cash ,11110220,Bank - Fixed Deposit - 2,750000,0,0,750000
+ Bank Balance and cash ,11110221,Bank - KIB - 011010223151,-12392.966,60179.875,30015,17771.909
+ Bank Balance and cash ,11110222,Bank - NBK - 2038952404 Sub A/C KWD,462,8752,1592,7622
+ Cash & Chq in Hand ,11110301,Control a/c - Cheques on Hand,2.038,252250.477,252252.727,-0.212
+ Cash & Chq in Hand ,11110302,Control a/c - Post Dated Cheques,36715.795,55661.419,58599.338,33777.876
+ Cash & Chq in Hand ,11110303,Control a/c - Immature Cheques,-26874.659,26651.559,23713.64,-23936.74
+ Cash & Chq in Hand ,11110310,Control a/c - Post Dated Cheques - HHT,-9842.909,0,0,-9842.909
+ Account Receivable & Prepayments ,11110609,Control a/c - Staff Zain Bills Control,9172.071,753.636,114.93,9810.777
+ Cash & Chq in Hand ,11110610,Control a/c - Petty Cash - Cash Salary,1142.402,2214.005,3356,0.407
+ Account Receivable & Prepayments ,11110612,Claims - HARIBO,4910,0,0,4910
+ Account payables and accruals ,11110614,Claims - BAHLSEN,1219.92,0,0,1219.92
+ Account Receivable & Prepayments ,11110618,Claims - LORENZ,1200,0,0,1200
+ Account Receivable & Prepayments ,11110619,FERGULF Kuwait Gen Trad Company,429180.967,122890.946,139407.683,412664.23
+ Account payables and accruals ,11110620,METCO (Middle East Telecommunication),7,0,0,7
+ Account payables and accruals ,11110621,Claims - Supplier Imports,26956.095,0,21440.151,5515.944
+ Cash & Chq in Hand ,11110622,Control a/c - Petty Cash,0,2234.565,2234.565,0
+ Account Receivable & Prepayments ,11110623,Claims - FERGULF Market Spends,35618.565,0,0,35618.565
+ Account Receivable & Prepayments ,11110624,Claims - Al THIQA,-10002.703,19846.255,9843.552,0
+ Account Receivable & Prepayments ,11110625,Claims - BATEEL,2020,2020,0,4040
+ Account Receivable & Prepayments ,11120101,Trade Receivable,1409150.749,872912.152,1036784.179,1245278.722
+ Account payables and accruals ,11120111,Provision - Debit Notes,-6136.45,0,0,-6136.45
+ Account Receivable & Prepayments ,11120112,Provision - Bad & Doubtful - CA,-221632.437,0,0,-221632.437
+ Account Receivable & Prepayments ,11120113,Provision - Bad & Doubtful - FSD,-278965.69,0,0,-278965.69
+ Account Receivable & Prepayments ,11120301,Prepaid - Rent,9282,3644,0,12926
+ Account Receivable & Prepayments ,11120302,Refundable Deposit,11704.013,0,0,11704.013
+ Account Receivable & Prepayments ,11120303,Prepaid - Expenses,10565.744,355,1276.523,9644.221
+ Account Receivable & Prepayments ,11120304,Prepaid - Insurance,-2342.854,0,2946.221,-5289.075
+ Account Receivable & Prepayments ,11120305,Due from Related Parties - Imad Sultan,800.804,0,0,800.804
+ Account Receivable & Prepayments ,11120306,Due from Related Parties - Hussain Jawad,70.242,0,0,70.242
+ Amount due from related parties ,11120307,Due from Related Parties - Mustafa Sultan,14032.321,0,0,14032.321
+ Amount due from related parties ,11120308,Due from Related Parties - Tawfiq Sultan,5655.103,0,0,5655.103
+ Account Receivable & Prepayments ,11120309,Due from Related Parties - Mohammed Tawfiq Sultan,16310.561,0,0,16310.561
+ Account payables and accruals ,11120326,Prepaid - Listing Fees,-37804,0,0,-37804
+ Account Receivable & Prepayments ,11120328,Prepaid - Market Rental,38659.08,0,8998,29661.08
+ Amount due to related parties ,11120401,Due from Related Parties - Bustan Wataniya,-157851.594,22010.015,9390,-145231.579
+ Amount due from related parties ,11120403,Due from Related Parties - Sultan Furnishing Co.,2471,0,0,2471
+ Amount due from related parties ,11120404,JUTEN,0,0,76,-76
+ Account payables and accruals ,11120405,Due to Related Parties - Towel International Group,614.32,0,0,614.32
+ Amount due from related parties ,11120408,Due from Related Parties - W.J.Towell -Enhance UAE,-0.004,0,0,-0.004
+ Amount due to related parties ,11120412,Bustan Wataniya - Debit Note,-604.486,0,0,-604.486
+ Amount due from related parties ,11120414,Due from Related Parties - GOOD LIFE Trading Co.,128057.094,9238,5000,132295.094
+ Loan to Relate Party ,11120415,Loan To FERGULF Kuwait Gen.Trad.W.L.L,749700,0,0,749700
+ Amount due from related parties ,11120417,Due from Related Parties - BRAND AID,34080.118,1574.4,0,35654.518
+ Amount due to related parties ,11120419,Due from Related Parties - Sultan Int. Printing,-72277.254,0,0,-72277.254
+ Amount due from related parties ,11120420,Due from Related Parties - BRAND AID,26268.54,70.75,0,26339.29
+ Amount due from related parties ,11120421,Due from Related Parties - KUCM,-225,0,0,-225
+ Account Receivable & Prepayments ,100300975,MAHDY TAMAH MOHAMMED  - HR - 1015,67.5,22.5,0,90
+ Account Receivable & Prepayments ,110700048,NABIL MUSCATI - GEN - 2153,3746.3,0,0,3746.3
+ Account Receivable & Prepayments ,130601868,NOURAH D SH A ALAJMI - 1043,-400,0,0,-400
+ Account Receivable & Prepayments ,140700494A,MOHAMMAD AHMAD SALEEM SHAABAN - 2380,-500,0,250,-750
+ Account Receivable & Prepayments ,461600333,SOBHIE  AZHAB  ALALI - CA - 2081,-1200,0,600,-1800
+ Account Receivable & Prepayments ,592801437,Saadoun Hashem Kayed Abbasi - 2001414,-2000,0,1000,-3000
+ Account Receivable & Prepayments ,592801449,Mohamed Ali Hussain Kahil - 2001426 (c/o bassem),-4000,0,2000,-6000
+ Account Receivable & Prepayments ,592801472,Alaa Mohamad Thalaj Supply Chain 2001447,-176,0,176,-352
+ Account Receivable & Prepayments ,592801473,Hend Ahmad Alkurdi Supply Chain 2001440,-168,0,84,-252
+ -   ,592801540,Hany Shokry Yanny - 2001640,0,30,30,0
+ Inventories ,11140101,Inventory,1288245.518,722660.019,607946.918,1402958.619
+ Inventories ,11140102,Inventory - Delivery Note But Not Invoice,-369.56,392060.077,392061.537,-371.02
+ Inventories ,11140103,Inventory - Custom Charges,-5087.709,22953.72,19493.6,-1627.589
+ Inventories ,11140104,Inventory - Clearing Expenses,11359.711,13382.697,11701.047,13041.361
+ Inventories ,11140105,Damages & Samples,0,122.644,122.644,0
+ Inventories ,11140108,Inventory - Fright Charges,-1785.796,12864.5,11528.086,-449.382
+ Inventories ,11140109,Inventory - Inventory Packing,-53477.033,120108.563,83585.485,-16953.955
+ Account payables and accruals ,11140112,Inventory - Demurrage-Port/Line,-73,0,0,-73
+ Inventories ,11140113,Inventory - Bank Charge(L/C & Policies),8104.372,0,482.941,7621.431
+ Inventories ,11140114,Inventory - Insurance Charges,-23517.227,766.78,1407.912,-24158.359
+ Account payables and accruals ,11140115,Inventory - Unloading Charges,-105.667,0,0,-105.667
+ Account payables and accruals ,11140117,Inventory - Unpallete Container,-126.682,184.8,184.8,-126.682
+ Account Receivable & Prepayments ,11140118,Inventory - Unpallete - Ferrero,-0.002,0,0,-0.002
+ Account Receivable & Prepayments ,11140120,Stock Take Differences (VSM - Main),-68.592,0,0,-68.592
+ Inventories ,11140121,Inventory - Provision For Stock - CA,-6499.582,0,0,-6499.582
+ Inventories ,11140122,Inventory - Provision For Stock - FSD,-40732.466,0,0,-40732.466
+ Inventories ,11140201,Inventory - Goods In Transit,-194.227,553675.809,553481.582,0
+ Property  and equipments ,11210101,Fixed Asset - Building & Warehousing,938115.42,0,0,938115.42
+ Property  and equipments ,11210102,Fixed Asset - Cars,707889.86,0,0,707889.86
+ Property  and equipments ,11210103,Fixed Asset - Furnitures,420903.17,0,0,420903.17
+ Property  and equipments ,11210104,Fixed Asset - Office Equipment,666097.262,350,0,666447.262
+ Property  and equipments ,11210105,Fixed Asset - Computers,281318.15,88,0,281406.15
+ Property  and equipments ,11210106,Fixed Asset - Machinery,-0.12,0,0,-0.12
+ Account Receivable & Prepayments ,11210107,Fixed Asset - Work In Progress,2083.333,0,0,2083.333
+ Property  and equipments ,11210108,Fixed Asset - Lease Hold Land,608400,0,0,608400
+ Property  and equipments ,11210301,Accumulated Depreciation - Building And Warehouse,-938116.618,0,0,-938116.618
+ Property  and equipments ,11210302,Accumulated  Depreciation - Cars,-656801.904,0,1249,-658050.904
+ Property  and equipments ,11210303,Accumulated Depreciation - Furniture,-418290.04,0,0,-418290.04
+ Property  and equipments ,11210304,Accumulated Depreciation - Office Equipment,-586773.614,0,8161,-594934.614
+ Property  and equipments ,11210305,Accumulated Depreciaton - Computers,-277849.319,0,563,-278412.319
+ Property  and equipments ,11210306,Accumulated Depreciation - Machinery,0.214,0,0,0.214
+ Loan to Relate Party ,11220101,Long Term Investment - GOODLIFE,121232.1,0,0,121232.1
+ Loan to Relate Party ,11220102,Long Term Investment - FERGULF Kuwait,304031,0,0,304031
+ Loan to Relate Party ,11220103,Long Term Investment - BRAND AID,141473,0,0,141473
+ Account payables and accruals ,22120101,Suppliers,-284469.265,1052613.42,856374.698,-88230.543
+ Account payables and accruals ,22120103,Suppliers A&P - BK POT,0.178,0,0,0.178
+ Account payables and accruals ,22120107,Employee Payable,21914.347,216,518.5,21611.847
+ Account payables and accruals ,22220019,Provision - OSD 2014,-12123.209,0,0,-12123.209
+ Account payables and accruals ,22220034,Provision - Rebate 2015,11428.2,0,0,11428.2
+ Account payables and accruals ,22220035,Provision - Rental 2015,-59503.425,0,0,-59503.425
+ Account payables and accruals ,22220036,Provision - Rental 2018,-18222.418,0,0,-18222.418
+ Account payables and accruals ,22220037,Provision - Rebate 2018,-2671.871,0,0,-2671.871
+ Account payables and accruals ,22220038,Provision - Rebate 2019,-2441.189,0,0,-2441.189
+ Account payables and accruals ,22220039,Provision - Rental 2019,-10979.645,0,0,-10979.645
+ Employees end of service benefits ,22220101,Provision - Indemnity,-815831.122,0,9361.965,-825193.087
+ Account payables and accruals ,22220102,Provision - Leave,-164798.182,2164.269,9147.673,-171781.586
+ Account payables and accruals ,22220103,Provision - Air Ticket,-187025.341,500,4218.5,-190743.841
+ Account payables and accruals ,22220228,Provision - Market Spends,-23.866,0,0,-23.866
+ Account payables and accruals ,22220229,Supplier Claims (Debit Notes) - Trade Claims,79143.6,49918,58351.765,70709.835
+ Account payables and accruals ,22220230,Provision - A&P 2020,-9494.457,0,0,-9494.457
+ Account payables and accruals ,22220233,Provision - A&P 2021,-57327.019,0,0,-57327.019
+ Account payables and accruals ,22220234,Provision - A&P 2022,-89428.258,0,0,-89428.258
+ Account payables and accruals ,22220235,Provision - A&P 2023,234052.75,0,0,234052.75
+ Account payables and accruals ,22220236,Kitchen Treasure Pool A/C,2133.517,0,0,2133.517
+ Account payables and accruals ,22220237,Provision - A&P 2024,-121716.342,0,0,-121716.342
+ Account payables and accruals ,22220238,Provision - A&P 2024 - FSD Ferrero,-27209,0,1090,-28299
+ Statutory Reserve ,22220201,Equity & Reserves - Statutary Reserve,-781105.57,0,0,-781105.57
+ General Reserve ,22220202,Equity & Reserves - Voluntary Reserve,-626133.57,0,0,-626133.57
+ Fair Value Reserve ,22220203,Equity & Reserves - Fair Value Reserve,-49031,0,0,-49031
+ Account payables and accruals ,22230101,Provision - Expenses,-109076.866,0,0,-109076.866
+ Account payables and accruals ,22230104,Accrued Income,52572,5312,0,57884
+ Account payables and accruals ,22230105,Provision - Expense 2020,-308625.35,0,0,-308625.35
+ Account payables and accruals ,22230106,Provision - Expense 2022,-43792.871,0,0,-43792.871
+ Account payables and accruals ,22230107,Provision - Expense 2023,-785604.731,24642.715,133835.574,-894797.59
+ Share Capital ,33220101,Equity & Reserves - Share Capital,-1000000,0,0,-1000000
+ Loan to Relate Party ,33220103,Equity & Reserves - T I H Partners Current Account,-72746.193,170,15700.371,-88276.564
+ Retained earnings ,33330103,Equity & Reserves - Retained Earnings,-1290892.302,0,0,-1290892.302
+ Account payables and accruals ,99990101,Control a/c - Suspense Account (Payment),374.52,267.255,267.255,374.52
+ Inventories ,99990103,Control a/c - Suspense Account (Stock),0,1.053,1.053,0
+ Control A/c ,99990104,Control a/c - Customers Dr/Cr,64156.531,21754.155,21707.295,64203.391
+ Account payables and accruals ,99990108,Control a/c - KFH Co-Ops Collection Suspense,-51925.232,260062.604,207615.378,521.994
+ Account payables and accruals ,99990109,Control a/c - KFH Deduction,0,6101.126,6101.126,0

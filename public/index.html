@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finance Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; color: #333; padding: 20px 24px; }
+
+        .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+        .header h1 { font-size: 20px; font-weight: 600; color: #1a1a2e; }
+
+        /* TABS */
+        .tabs { display: flex; gap: 4px; background: #e4e7ec; border-radius: 10px; padding: 4px; width: fit-content; margin-bottom: 18px; }
+        .tab-btn { padding: 7px 20px; border: none; border-radius: 7px; font-size: 13px; font-weight: 500; cursor: pointer; background: transparent; color: #777; }
+        .tab-btn.active { background: #fff; color: #1a1a2e; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+
+        /* FILTER BAR */
+        .filter-bar { display: flex; flex-wrap: wrap; gap: 10px; background: #fff; border-radius: 10px; padding: 14px 16px; border: 0.5px solid #e5e5e5; margin-bottom: 16px; align-items: flex-end; }
+        .fg { display: flex; flex-direction: column; gap: 4px; }
+        .fg label { font-size: 10px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.5px; }
+        .fg select { padding: 6px 10px; border: 0.5px solid #ddd; border-radius: 7px; font-size: 12px; background: #fafafa; color: #333; min-width: 110px; cursor: pointer; }
+        .fg select:focus { outline: none; border-color: #4F81BD; }
+        .fg input[type="color"] { width: 44px; height: 32px; border: 0.5px solid #ddd; border-radius: 7px; padding: 2px 3px; cursor: pointer; background: #fafafa; }
+        .reset-btn { padding: 7px 14px; border: 0.5px solid #ddd; border-radius: 7px; font-size: 12px; font-weight: 500; cursor: pointer; background: #fff; color: #555; margin-top: 18px; }
+        .reset-btn:hover { background: #f5f5f5; }
+
+        /* KPI CARDS */
+        .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 16px; }
+        .kpi-card { background: #fff; border-radius: 10px; padding: 14px 16px; border: 0.5px solid #e5e5e5; }
+        .kpi-label { font-size: 10px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+        .kpi-value { font-size: 18px; font-weight: 600; color: #1a1a2e; }
+
+        /* CHART CARD */
+        .chart-card { background: #fff; border-radius: 10px; padding: 20px 20px 24px; border: 0.5px solid #e5e5e5; }
+        .chart-title { font-size: 11px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+        .chart-wrap { position: relative; width: 100%; height: 340px; }
+
+        /* SALES DRILL PANEL */
+        #salesDrillPanel { display: none; margin-top: 16px; background: #fff; border-radius: 10px; border: 0.5px solid #c5d0e8; overflow: hidden; }
+        .drill-panel-header { display: flex; align-items: center; justify-content: space-between; padding: 11px 18px; background: #f0f4ff; border-bottom: 0.5px solid #c5d0e8; }
+        .drill-panel-header span { font-size: 13px; font-weight: 600; color: #2c3e7a; }
+        .drill-close-btn { font-size: 12px; color: #7a8cba; cursor: pointer; padding: 3px 10px; border: 0.5px solid #c5d0e8; border-radius: 6px; background: #fff; }
+        .drill-close-btn:hover { background: #e8ecf8; }
+        .drill-charts-row { display: grid; grid-template-columns: 1fr 1fr; }
+        @media (max-width: 800px) { .drill-charts-row { grid-template-columns: 1fr; } }
+        .drill-chart-half { padding: 16px 18px 20px; }
+        .drill-chart-half:first-child { border-right: 0.5px solid #e8ecf8; }
+        .drill-chart-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+        .drill-chart-wrap { position: relative; width: 100%; height: 260px; }
+
+        /* P&L LAYOUT */
+        .pl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+        @media (max-width: 900px) { .pl-grid { grid-template-columns: 1fr; } }
+        .pl-table-card { background: #fff; border-radius: 10px; border: 0.5px solid #e5e5e5; overflow: hidden; }
+        .pl-table-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; border-bottom: 0.5px solid #eee; }
+        .pl-table-header span { font-size: 11px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        /* P&L COMPARE LAYOUT */
+        .comp-filter-col { display: flex; flex-direction: column; gap: 10px; flex: 1; min-width: 260px; }
+        .comp-col-label { font-size: 11px; font-weight: 600; color: #4F81BD; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+        .comp-col-label.right { color: #C0504D; }
+        .comp-divider { width: 1px; background: #e5e5e5; margin: 0 8px; align-self: stretch; }
+        .comp-kpi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+        .comp-kpi-half { display: flex; flex-direction: column; gap: 10px; }
+        .kpi-card.blue { border-left: 3px solid #4F81BD; }
+        .kpi-card.red  { border-left: 3px solid #C0504D; }
+
+        /* TABLES */
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th { background: #f8f9fb; padding: 9px 12px; text-align: left; font-size: 10px; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 0.5px solid #eee; }
+        th:not(:first-child) { text-align: right; padding-right: 16px; }
+        tbody tr:hover { background: #fafafa; }
+        .pl-drill-row:hover { background: #f0f4ff !important; }
+        .pl-drill-row:hover td:first-child { color: #4F81BD; }
+    </style>
+</head>
+<body>
+
+<div class="header"><h1>Finance Dashboard</h1></div>
+
+<div class="tabs">
+    <button class="tab-btn active" data-tab="sales">Sales</button>
+    <button class="tab-btn"        data-tab="pl">P&amp;L</button>
+    <button class="tab-btn"        data-tab="plCompare">P&amp;L Compare</button>
+</div>
+
+<!-- ══════════════════════════════════════
+     SALES VIEW
+══════════════════════════════════════ -->
+<div id="salesView">
+
+    <div class="filter-bar">
+        <div class="fg"><label>Company</label>    <select id="companyFilter"></select></div>
+        <div class="fg"><label>Division</label>   <select id="divisionFilter"><option value="All">All</option></select></div>
+        <div class="fg"><label>Year</label>        <select id="yearFilter"></select></div>
+        <div class="fg"><label>Month</label>       <select id="monthFilter"></select></div>
+        <div class="fg"><label>Brand</label>       <select id="brandFilter"></select></div>
+        <div class="fg"><label>Customer</label>    <select id="customerFilter"></select></div>
+        <div class="fg"><label>Salesperson</label> <select id="salesmanFilter"></select></div>
+        <div class="fg"><label>Bar Color</label>   <input type="color" id="colorPicker" value="#4F81BD"></div>
+        <button class="reset-btn" id="resetBtn">↺ Reset</button>
+    </div>
+
+    <div class="kpi-row">
+        <div class="kpi-card"><div class="kpi-label">Total Net Sales</div><div class="kpi-value" id="kpiTotal">—</div></div>
+        <div class="kpi-card"><div class="kpi-label">Periods</div><div class="kpi-value" id="kpiPeriods">—</div></div>
+    </div>
+
+    <div class="chart-card">
+        <div class="chart-title">Net Sales by Period · Bars = Sales · Line = Trend · Click bar to drill</div>
+        <div class="chart-wrap"><canvas id="salesChart"></canvas></div>
+    </div>
+
+    <div id="salesDrillPanel">
+        <div class="drill-panel-header">
+            <span id="salesDrillTitle">Breakdown</span>
+            <button class="drill-close-btn" onclick="closeSalesDrill();renderSalesChart()">✕ Close</button>
+        </div>
+        <div class="drill-charts-row">
+            <div class="drill-chart-half">
+                <div class="drill-chart-label" style="color:#4F81BD;">Top 10 Brands</div>
+                <div class="drill-chart-wrap"><canvas id="brandChart"></canvas></div>
+            </div>
+            <div class="drill-chart-half">
+                <div class="drill-chart-label" style="color:#8E6BBF;">Top 10 Customers</div>
+                <div class="drill-chart-wrap"><canvas id="custChart"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ══════════════════════════════════════
+     P&L VIEW
+══════════════════════════════════════ -->
+<div id="plView" style="display:none;">
+
+    <div class="filter-bar">
+        <div class="fg"><label>Company</label><select id="plCompanyFilter"></select></div>
+        <div class="fg"><label>Year</label>   <select id="plYearFilter"></select></div>
+        <div class="fg"><label>Month</label>  <select id="plMonthFilter"></select></div>
+        <button class="reset-btn" id="plResetBtn">↺ Reset</button>
+    </div>
+
+    <div class="kpi-row">
+        <div class="kpi-card"><div class="kpi-label">Gross Sales</div><div class="kpi-value" id="plKpiRevenue">—</div></div>
+        <div class="kpi-card"><div class="kpi-label">Gross Profit</div><div class="kpi-value" id="plKpiGP">—</div></div>
+        <div class="kpi-card"><div class="kpi-label">Net Profit</div><div class="kpi-value" id="plKpiNP">—</div></div>
+        <div class="kpi-card"><div class="kpi-label">Total OpEx</div><div class="kpi-value" id="plKpiOpex">—</div></div>
+    </div>
+
+    <div class="pl-grid">
+        <div class="pl-table-card">
+            <div class="pl-table-header"><span>Profit &amp; Loss · click ▶ rows for detail</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Line Item</th>
+                        <th style="text-align:right;padding-right:16px;">Amount</th>
+                        <th style="text-align:right;padding-right:16px;">% of Sales</th>
+                    </tr>
+                </thead>
+                <tbody id="plTableBody"></tbody>
+            </table>
+        </div>
+        <div class="chart-card">
+            <div class="chart-title">P&amp;L Waterfall</div>
+            <div class="chart-wrap"><canvas id="plChart"></canvas></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ══════════════════════════════════════
+     P&L COMPARE VIEW
+══════════════════════════════════════ -->
+<div id="plCompareView" style="display:none;">
+
+    <!-- Two-column filter bar -->
+    <div class="filter-bar" style="gap:16px;">
+        <div class="comp-filter-col">
+            <div class="comp-col-label">Period A</div>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;">
+                <div class="fg"><label>Company</label><select id="plCompCompany1"></select></div>
+                <div class="fg"><label>Year</label>   <select id="plCompYear1"></select></div>
+                <div class="fg"><label>Month</label>  <select id="plCompMonth1"></select></div>
+            </div>
+        </div>
+        <div class="comp-divider"></div>
+        <div class="comp-filter-col">
+            <div class="comp-col-label right">Period B</div>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;">
+                <div class="fg"><label>Company</label><select id="plCompCompany2"></select></div>
+                <div class="fg"><label>Year</label>   <select id="plCompYear2"></select></div>
+                <div class="fg"><label>Month</label>  <select id="plCompMonth2"></select></div>
+            </div>
+        </div>
+        <button class="reset-btn" id="plCompResetBtn" style="align-self:flex-end;">↺ Reset</button>
+    </div>
+
+    <!-- KPI cards split by period -->
+    <div class="comp-kpi-grid">
+        <div class="comp-kpi-half">
+            <div class="kpi-card blue"><div class="kpi-label" style="color:#4F81BD;">Revenue — A</div><div class="kpi-value" id="plCompRev1">—</div></div>
+            <div class="kpi-card blue"><div class="kpi-label" style="color:#4F81BD;">Gross Profit — A</div><div class="kpi-value" id="plCompGP1">—</div></div>
+            <div class="kpi-card blue"><div class="kpi-label" style="color:#4F81BD;">Net Profit — A</div><div class="kpi-value" id="plCompNP1">—</div></div>
+        </div>
+        <div class="comp-kpi-half">
+            <div class="kpi-card red"><div class="kpi-label" style="color:#C0504D;">Revenue — B</div><div class="kpi-value" id="plCompRev2">—</div></div>
+            <div class="kpi-card red"><div class="kpi-label" style="color:#C0504D;">Gross Profit — B</div><div class="kpi-value" id="plCompGP2">—</div></div>
+            <div class="kpi-card red"><div class="kpi-label" style="color:#C0504D;">Net Profit — B</div><div class="kpi-value" id="plCompNP2">—</div></div>
+        </div>
+    </div>
+
+    <div class="pl-grid">
+        <!-- Comparison table -->
+        <div class="pl-table-card">
+            <div class="pl-table-header"><span>P&amp;L Comparison — A vs B</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Line Item</th>
+                        <th style="text-align:right;padding-right:16px;color:#4F81BD;">A Amount</th>
+                        <th style="text-align:right;padding-right:16px;color:#4F81BD;">A %</th>
+                        <th style="text-align:right;padding-right:16px;color:#C0504D;">B Amount</th>
+                        <th style="text-align:right;padding-right:16px;color:#C0504D;">B %</th>
+                        <th style="text-align:right;padding-right:16px;">Variance</th>
+                    </tr>
+                </thead>
+                <tbody id="plCompareTableBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Side-by-side chart -->
+        <div class="chart-card">
+            <div class="chart-title">P&amp;L Comparison Chart</div>
+            <div class="chart-wrap"><canvas id="plCompareChart"></canvas></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
