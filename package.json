@@ -1,23 +1,15 @@
 {
-  "name": "financeapp",
+  "name": "webfinanceapp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-  "start": "node server.js",
-  "postinstall": "npm rebuild sqlite3 --build-from-source"
-}
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "postinstall": "npm rebuild sqlite3 --build-from-source"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "chokidar": "^5.0.0",
-    "csv-parser": "^3.2.0",
-    "express": "^5.2.1",
-    "sqlite3": "^6.0.1",
-    "xlsx": "^0.18.5"
+    "better-sqlite3": "^12.8.0",
+    "chokidar": "^3.5.3",
+    "csv-parser": "^3.0.0",
+    "express": "^4.18.2"
   }
-
+}

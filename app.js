@@ -2,7 +2,8 @@
 // STATE & UTILITIES — Modern UI (Option 2 + C + F)
 // ==========================================================
 const express  = require('express')
-const sqlite3  = require('sqlite3').verbose()
+const Database = require('better-sqlite3')
+const db = new Database('finance.db')
 const csv      = require('csv-parser')
 const chokidar = require('chokidar')
 const fs       = require('fs')
